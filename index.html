@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <div class="card">
+            <h1>Прогноз погоды по часам</h1>
+            <div class="days">
+                <button type="text" class="four-day" id="four-days" value="4" >На 1 день</button>
+                <button type="text" class="four-day" id="sixteen-day" value="16">На 3 дня</button>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Введите город">
+                <button  class="four-days" value="1"><img src="images/search.png"></button>
+            </div>
+            <div class="error">
+                <p>Не верные данные</p>
+            </div>
+            <div class="weather">
+                <img src="images/rain.png" class="weather-icon">
+                <h1 class="temp">25&deg; c</h1>
+                <h2 class="city">Минск</h2>
+
+                <div class="details">
+                    <div class="col">
+                        <img src="images/humidity.png">
+                            <div>
+                                <p class="himidity">50%</p>
+                                <p>Влажность</p>
+                            </div>
+                    </div>
+                    <div class="col">
+                         <img src="images/wind.png">
+                            <div>
+                                <p class="wind">15 м/с</p>
+                                <p>Скорость ветра</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="./script.js"></script>
+    </body>
+</html>
